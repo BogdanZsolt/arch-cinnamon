@@ -1,0 +1,40 @@
+[/]
+custom-list=['custom0', 'custom1', 'custom2', 'custom3']
+
+[custom-keybindings/custom0]
+binding=['<Alt>m']
+command='playerctl --player=spotify play-pause'
+name='Spotify play-pause'
+
+[custom-keybindings/custom1]
+binding=['<Alt>n']
+command='playerctl --player=spotify next'
+name='Spotify next music'
+
+[custom-keybindings/custom2]
+binding=['<Alt>p']
+command='playerctl --player=spotify previous'
+name='Spotify previous music'
+
+[custom-keybindings/custom3]
+binding=['<Super>t']
+command='xfce4-terminal --hide-menubar -e tmux'
+name='tmux terminal'
+
+[media-keys]
+home=['<Shift><Super>Return', 'XF86Explorer']
+terminal=['<Primary><Alt>t', '<Super>Return']
+www=['XF86WWW', '<Primary><Super>Return']
+
+[wm]
+begin-move=['<Super>m']
+begin-resize=['<Super>r']
+close=['<Alt>F4', '<Super>q']
+move-to-workspace-1=['<Alt><Super>1']
+move-to-workspace-2=['<Alt><Super>2']
+move-to-workspace-3=['<Alt><Super>3']
+move-to-workspace-4=['<Alt><Super>4']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
