@@ -17,18 +17,24 @@ set -e
 
 echo "Installing fonts from Arch Linux repo"
 
-sudo pacman -S adobe-source-sans-pro-fonts --noconfirm --needed
-sudo pacman -S cantarell-fonts --noconfirm --needed
-sudo pacman -S noto-fonts --noconfirm --needed
-sudo pacman -S terminus-font --noconfirm --needed
-sudo pacman -S ttf-bitstream-vera --noconfirm --needed
-sudo pacman -S ttf-dejavu --noconfirm --needed
-sudo pacman -S ttf-droid --noconfirm --needed
-sudo pacman -S ttf-inconsolata --noconfirm --needed
-sudo pacman -S ttf-liberation --noconfirm --needed
-sudo pacman -S ttf-roboto --noconfirm --needed
-sudo pacman -S ttf-ubuntu-font-family --noconfirm --needed
-sudo pacman -S tamsyn-font --noconfirm --needed
+sudo pacman -S --noconfirm --needed adobe-source-sans-pro-fonts 
+sudo pacman -S --noconfirm --needed cantarell-fonts
+sudo pacman -S --noconfirm --needed noto-fonts
+sudo pacman -S --noconfirm --needed terminus-font
+sudo pacman -S --noconfirm --needed ttf-bitstream-vera
+sudo pacman -S --noconfirm --needed ttf-dejavu
+sudo pacman -S --noconfirm --needed ttf-droid
+sudo pacman -S --noconfirm --needed ttf-hack
+#sudo pacman -S --noconfirm --needed nerd-fonts-source-code-pro
+sudo pacman -S --noconfirm --needed ttf-inconsolata
+sudo pacman -S --noconfirm --needed ttf-liberation
+sudo pacman -S --noconfirm --needed ttf-roboto
+sudo pacman -S --noconfirm --needed ttf-ubuntu-font-family
+sudo pacman -S --noconfirm --needed tamsyn-font
+sudo pacman -S --noconfirm --needed ttf-cascadia-code
+
+sh AUR/install-ttf-font-awesome-v*.sh
+sh AUR/install-ttf-mac-fonts-v*.sh
 
 echo "################################################################"
 echo "####        Fonts from Arch Linux repo have been installed        ####"
@@ -49,8 +55,6 @@ cp Personal/settings/fonts/* ~/.fonts/
 echo "Building new fonts into the cache files";
 echo "Depending on the number of fonts, this may take a while..."
 fc-cache -fv ~/.fonts
-
-
 
 echo "################################################################"
 echo "#########   Fonts have been copied and loaded   ################"

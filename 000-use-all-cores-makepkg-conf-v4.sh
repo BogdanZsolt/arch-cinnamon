@@ -1,4 +1,6 @@
 #!/bin/bash
+# credits to Soehub
+# https://gist.github.com/soehub/fc07b86e2292c562328ee0dc2aadf740
 set -e
 ##################################################################################################################
 # Author	:	Erik Dubois
@@ -6,8 +8,6 @@ set -e
 # Website	:	https://www.arcolinux.info
 # Website	:	https://www.arcolinux.com
 # Website	:	https://www.arcolinuxd.com
-# Website	:	https://www.arcolinuxb.com
-# Website	:	https://www.arcolinuxiso.com
 # Website	:	https://www.arcolinuxforum.com
 ##################################################################################################################
 #
@@ -15,16 +15,20 @@ set -e
 #
 ##################################################################################################################
 
-# software from AUR (Arch User Repositories)
-# https://aur.archlinux.org/packages/
+numberofcores=$(grep -c ^processor /proc/cpuinfo)
 
-echo "Installing category System"
+if [ $numberofcores -gt 1 ]
+then
+        echo "You have " $numberofcores" cores."
+        echo "Changing the makeflags for "$numberofcores" cores."
+        sudo sed -i 's/#MAKEFLAGS="-j2"/MAKEFLAGS="-j'$(($numberofcores+1))'"/g' /etc/makepkg.conf;
+        echo "Changing the compression settings for "$numberofcores" cores."
+        sudo sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -T '"$numberofcores"' -z -)/g' /etc/makepkg.conf
+else
+        echo "No change."
+fi
 
-sudo pacman -S nemo-fileroller --noconfirm --needed
-sudo pacman -S imagemagick --noconfirm --needed
-sudo pacman -S w3m --noconfirm --needed
-sudo pacman -S cinnamon-translations --noconfirm --needed
 
 echo "################################################################"
-echo "####    Software from Arch Linux Repository installed     ######"
+echo "###  All cores will be used during building and compression ####"
 echo "################################################################"
