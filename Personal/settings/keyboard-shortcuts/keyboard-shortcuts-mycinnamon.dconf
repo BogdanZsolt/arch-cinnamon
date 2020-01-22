@@ -1,0 +1,27 @@
+[/]
+custom-list=['custom0']
+
+[custom-keybindings/custom0]
+binding=['<Super>Return']
+command='guake -t'
+name='guake'
+
+[media-keys]
+home=['<Shift><Super>Return', 'XF86Explorer']
+media=['XF86AudioMedia']
+next=['XF86AudioNext', '<Alt>n']
+play=['XF86AudioPlay', '<Alt>m']
+previous=['XF86AudioPrev', '<Alt>p']
+www=['<Primary><Super>Return']
+
+[wm]
+move-to-monitor-left=@as []
+move-to-monitor-right=@as []
+move-to-workspace-left=['<Shift><Super>Left']
+move-to-workspace-right=['<Shift><Super>Right']
+panel-run-dialog=@as []
+push-snap-left=@as []
+push-snap-right=@as []
+push-tile-left=['<Super>Left']
+switch-to-workspace-left=['<Primary><Super>Left']
+switch-to-workspace-right=['<Primary><Super>Right']

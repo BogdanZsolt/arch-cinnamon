@@ -17,7 +17,7 @@
 
 sudo pacman -S dconf dconf-editor --noconfirm --needed
 
-dconf dump /org/cinnamon/desktop/keybindings/ > keyboard-shortcuts-cinnamon.dconf
+dconf dump /org/cinnamon/desktop/keybindings/ > keyboard-shortcuts-mycinnamon.dconf
 
 echo "################################################################"
 echo "###################    shortcuts dumped   ######################"

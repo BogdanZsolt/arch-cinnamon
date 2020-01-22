@@ -24,7 +24,7 @@ echo "Installing category Graphics"
 
 sudo pacman -S --noconfirm --needed gnome-font-viewer
 sudo pacman -S --noconfirm --needed gpick
-sudo pacman -S --noconfirm --needed ristretto
+#sudo pacman -S --noconfirm --needed ristretto
 
 echo "Installing category Internet"
 
@@ -106,11 +106,13 @@ sudo pacman -S --noconfirm --needed protobuf
 sudo pacman -S --noconfirm --needed zenity
 sudo pacman -S --noconfirm --needed cinnamon-translations 
 sudo pacman -S --noconfirm --needed nemo-fileroller 
-sudo pacman -S --noconfirm --needed imagemagick
+#sudo pacman -S --noconfirm --needed imagemagick
 sudo pacman -S --noconfirm --needed w3m
 sudo pacman -S --noconfirm --needed chrome-gnome-shell
-#sudo pacman -S --noconfirm --needed tilda
-#sudo pacman -S --noconfirm --needed guake
+sudo pacman -S --noconfirm --needed xreader
+sudo pacman -S --noconfirm --needed gvfs-goa 
+sudo pacman -S --noconfirm --needed gvfs-google
+sudo pacman -S --noconfirm --needed guake
 
 ###############################################################################################
 

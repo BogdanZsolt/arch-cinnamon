@@ -17,7 +17,7 @@
 
 sudo pacman -S dconf dconf-editor --noconfirm --needed
 
-dconf load /org/cinnamon/desktop/keybindings/ < keyboard-shortcuts-cinnamon.dconf
+dconf load /org/cinnamon/desktop/keybindings/ < keyboard-shortcuts-mycinnamon.dconf
 
 echo "################################################################"
 echo "###################    shortcuts loaded   ######################"
