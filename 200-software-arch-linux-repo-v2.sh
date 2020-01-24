@@ -113,7 +113,7 @@ sudo pacman -S --noconfirm --needed xreader
 sudo pacman -S --noconfirm --needed gvfs-goa 
 sudo pacman -S --noconfirm --needed gvfs-google
 sudo pacman -S --noconfirm --needed gnome-terminal
-sudo pacman -S --noconfirm --needed guake
+#sudo pacman -S --noconfirm --needed guake
 
 ###############################################################################################
 

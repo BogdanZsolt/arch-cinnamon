@@ -18,9 +18,10 @@ set -e
 sudo pacman -Syyu --noconfirm
 
 #installing displaymanager or login manager
+sudo pacman -S --noconfirm --needed lightdm
+sudo pacman -S --noconfirm --needed lightdm-gtk-greeter lightdm-gtk-greeter-settings
 sh AUR/install-lightdm-slick-greeter-v1.sh
 sh AUR/install-lightdm-settings-v1.sh
-sudo pacman -S --noconfirm --needed lightdm
 
 #installing desktop environment
 sudo pacman -S --noconfirm --needed cinnamon 
