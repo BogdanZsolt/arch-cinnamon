@@ -12,7 +12,7 @@ echo "Installing category Accessories"
 
 sudo pacman -S --noconfirm --needed galculator
 sudo pacman -S --noconfirm --needed gnome-screenshot
-sudo pacman -S --noconfirm --needed xfce4-terminal 
+#sudo pacman -S --noconfirm --needed xfce4-terminal 
 
 echo "Installing category Development"
 
@@ -112,6 +112,7 @@ sudo pacman -S --noconfirm --needed chrome-gnome-shell
 sudo pacman -S --noconfirm --needed xreader
 sudo pacman -S --noconfirm --needed gvfs-goa 
 sudo pacman -S --noconfirm --needed gvfs-google
+sudo pacman -S --noconfirm --needed gnome-terminal
 sudo pacman -S --noconfirm --needed guake
 
 ###############################################################################################
