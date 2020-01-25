@@ -36,7 +36,7 @@ sudo pacman -S --noconfirm --needed firefox
 
 echo "Installing category Multimedia"
 
-#sh AUR/install-spotify-v*.sh
+sh AUR/install-spotify-v*.sh
 #sudo pacman -S --noconfirm --needed krita
 #sudo pacman -S --noconfirm --needed kdenlive
 sudo pacman -S --noconfirm --needed simplescreenrecorder
@@ -60,6 +60,7 @@ sh AUR/install-tela-icon-theme-git-v*.sh
 sh AUR/install-inxi-v*.sh
 sh AUR/install-screenkey-git-v*.sh
 sh AUR/install-xcursor-breeze-v*.sh
+sh AUR/install-cinnamon-xviewer-v1.sh
 sh AUR/install-yad-v*.sh
 sudo pacman -S --noconfirm --needed arc-gtk-theme
 sudo pacman -S --noconfirm --needed adapta-gtk-theme
@@ -106,6 +107,8 @@ sudo pacman -S --noconfirm --needed protobuf
 sudo pacman -S --noconfirm --needed zenity
 sudo pacman -S --noconfirm --needed cinnamon-translations 
 sudo pacman -S --noconfirm --needed nemo-fileroller 
+sudo pacman -S --noconfirm --needed nemo-image-converter 
+sudo pacman -S --noconfirm --needed nemo-terminal
 #sudo pacman -S --noconfirm --needed imagemagick
 sudo pacman -S --noconfirm --needed w3m
 sudo pacman -S --noconfirm --needed chrome-gnome-shell
