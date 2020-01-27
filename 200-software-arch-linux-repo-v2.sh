@@ -62,10 +62,13 @@ sh AUR/install-screenkey-git-v*.sh
 sh AUR/install-xcursor-breeze-v*.sh
 sh AUR/install-cinnamon-xviewer-v1.sh
 sh AUR/install-yad-v*.sh
+sh AUR/install-cinnamon-sound-effects-v1.sh
+sh AUR/install-la-capitaine-icon-theme-v1.sh
 sudo pacman -S --noconfirm --needed arc-gtk-theme
 sudo pacman -S --noconfirm --needed adapta-gtk-theme
 sudo pacman -S --noconfirm --needed materia-gtk-theme
 sudo pacman -S --noconfirm --needed papirus-icon-theme
+sudo pacman -S --noconfirm --needed capitaine-cursors
 sudo pacman -S --noconfirm --needed archlinux-wallpaper
 sudo pacman -S --noconfirm --needed accountsservice
 sudo pacman -S --noconfirm --needed dconf-editor

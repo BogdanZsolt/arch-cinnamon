@@ -20,8 +20,6 @@ sudo pacman -Syyu --noconfirm
 #installing displaymanager or login manager
 sudo pacman -S --noconfirm --needed lightdm
 sudo pacman -S --noconfirm --needed lightdm-gtk-greeter lightdm-gtk-greeter-settings
-sh AUR/install-lightdm-slick-greeter-v1.sh
-sh AUR/install-lightdm-settings-v1.sh
 
 #installing desktop environment
 sudo pacman -S --noconfirm --needed cinnamon 
@@ -30,3 +28,10 @@ sudo pacman -S --noconfirm --needed cinnamon
 sudo systemctl enable lightdm.service -f
 sudo systemctl set-default graphical.target
 
+#Install & setup login manager theme
+sh AUR/install-lightdm-slick-greeter-v1.sh
+sh AUR/install-lightdm-settings-v1.sh
+
+if pacman -Qi $package &> /dev/null; then
+    sudo sed -i 's/#greeter-session=/greeter-session=lightdm-slick-greeter/g' /etc/lightdm/lightdm.conf
+fi
