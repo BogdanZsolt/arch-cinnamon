@@ -64,6 +64,7 @@ sh AUR/install-cinnamon-xviewer-v1.sh
 sh AUR/install-yad-v*.sh
 sh AUR/install-cinnamon-sound-effects-v1.sh
 sh AUR/install-la-capitaine-icon-theme-v1.sh
+sh AUR/install-korla-icon-theme-v1.sh
 sudo pacman -S --noconfirm --needed arc-gtk-theme
 sudo pacman -S --noconfirm --needed adapta-gtk-theme
 sudo pacman -S --noconfirm --needed materia-gtk-theme
@@ -103,6 +104,7 @@ sudo pacman -S --noconfirm --needed vnstat
 sudo pacman -S --noconfirm --needed wmctrl
 sudo pacman -S --noconfirm --needed unclutter
 sudo pacman -S --noconfirm --needed xdg-user-dirs
+sudo pacman -S --noconfirm --needed ntfs-3g
 sudo pacman -S --noconfirm --needed xdo
 sudo pacman -S --noconfirm --needed xdotool
 sudo pacman -S --noconfirm --needed libmicrodns
@@ -119,7 +121,7 @@ sudo pacman -S --noconfirm --needed xreader
 sudo pacman -S --noconfirm --needed gvfs-goa 
 sudo pacman -S --noconfirm --needed gvfs-google
 sudo pacman -S --noconfirm --needed gnome-terminal
-#sudo pacman -S --noconfirm --needed guake
+sudo pacman -S --noconfirm --needed tilda
 
 ###############################################################################################
 

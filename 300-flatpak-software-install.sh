@@ -22,14 +22,16 @@ else
     fi
 fi
 
-#flatpak install flathub io.github.liberodark.OpenDrive
-flatpak install flathub com.bitwarden.desktop
-flatpak install flathub com.spotify.Client
-flatpak install flathub org.inkscape.Inkscape
-#flatpak install flathub org.gimp.GIMP 
-flatpak install flathub org.kde.krita
-flatpak install flathub org.kde.kdenlive
-#flatpak install flathub com.ozmartians.VidCutter
-#flatpak install flathub com.discordapp.Discord
-#flatpak install flathub org.telegram.desktop
-#flatpak install flathub com.slack.Slack
+#flatpak install -y flathub io.github.liberodark.OpenDrive
+flatpak install -y flathub com.bitwarden.desktop
+#flatpak install -y flathub com.spotify.Client
+flatpak install -y flathub org.inkscape.Inkscape
+#flatpak install -y flathub org.gimp.GIMP 
+flatpak install -y flathub org.kde.krita
+flatpak install -y flathub org.kde.kdenlive
+#flatpak install -y flathub org.olivevideoeditor.Olive
+#flatpak install -y flathub com.ozmartians.VidCutter
+#flatpak install -y flathub com.discordapp.Discord
+#flatpak install -y flathub org.telegram.desktop
+#flatpak install -y flathub com.slack.Slack
+
